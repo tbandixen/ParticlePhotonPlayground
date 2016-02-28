@@ -1,13 +1,11 @@
-String deviceId;
 const int BOARD_LED = D7;
 
 void setup() {
-    deviceId = System.deviceID();
     pinMode(BOARD_LED, OUTPUT);
 }
 
 void loop() {
-    _blink(100, 2 * 1000);
+    _blink(1, 15 * 1000);
 }
 
 void _blink(int duration, int pause) {
